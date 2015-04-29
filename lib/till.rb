@@ -20,4 +20,12 @@ class Till
   def tax
     (cash_out * TAX_RATE).round(2)
   end
+
+  def payment(amount)
+    @payment = amount
+  end
+
+  def change
+    @payment - cash_out
+  end
 end

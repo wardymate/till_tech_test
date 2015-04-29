@@ -34,4 +34,8 @@ describe Till do
     expect(subject.tax).to eq 2.26
   end
 
+  it 'receives payment' do
+    expect(subject.payment(10)).to eq 10
+  end
+
 end
