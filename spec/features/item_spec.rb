@@ -8,8 +8,8 @@ describe Item do
   end
 
   it 'an Americano item has a price of 3.75' do
-    options = { name: 'Americano', price: 3.75 }
+    options = { name: 'Americano', price: 375 }
     americano = Item.new(options)
-    expect(americano.price).to eq 3.75
+    expect(americano.price).to eq 375
   end
 end
