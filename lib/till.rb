@@ -42,4 +42,8 @@ class Till
   def muffins?
     @order_items.map(&:name).any? { |s| s.include?('muffin') }
   end
+
+  def muffin_discount
+    @order_items.select { }
+  end
 end

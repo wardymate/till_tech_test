@@ -3,6 +3,9 @@ script:
   - bundle install
   - bundle exec rspec spec
 
+env:
+  -CODECLIMATE_REPO_TOKEN=72e80baa69e2e96b69508cf1c67afc1c984007b130e7d88a1e24ec48bbe1ba9a
+
 addons:
 code_climate:
   repo_token: 72e80baa69e2e96b69508cf1c67afc1c984007b130e7d88a1e24ec48bbe1ba9a
